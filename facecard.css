@@ -1,131 +1,45 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #f2f4f7;
     font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
     margin: 0;
 }
-
-.logo-img {
-    width: 120px;
-}
-
-nav {
-    background-color: white;
-    padding: 20px 0;
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-nav .navcontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.menu-list {
-    display: flex;
-}
-
-.menu-li {
-    list-style: none;
-    margin-left: 30px;
-}
-
-.menu-li>a {
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: black;
-    transition: 0.5s all ease;
-}
-
-.menu-li>a:hover {
-    color: #0866ff;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
-
 .container {
     background-color: #fff;
-    padding: 40px;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
 }
-
 .container h1 {
-    color: #0866ff;
-    margin-bottom: 20px;
+    color: #1877f2;
+    margin-bottom: 10px;
 }
-
 .container p {
     color: #606770;
     margin-bottom: 20px;
 }
-
 .container input[type="text"],
 .container input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin: 15px 0;
-    border: 2px solid #dddfe2;
-    border-radius: 8px;
+    margin: 10px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 4px;
 }
-
 .container button {
     width: 100%;
-    padding: 15px;
-    background-color: #0866ff;
+    padding: 10px;
+    background-color: #1877f2;
     color: #fff;
-    font-weight: bold;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
 }
-
 .container button:hover {
-    background-color: #63a7ff;
-}
-
-.link .forgot {
-    color: #1877f2;
-    font-size: 0.875rem;
-}
-
-.link .forgot:hover {
-    text-decoration: underline;
-}
-
-hr {
-    border: none;
-    height: 1px;
-    background-color: #ccc;
-    margin: 20px 0;
-}
-
-.button a {
-    display: inline-block;
-    background-color: #42b72a;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.button a:hover {
-    background-color: #36a420;
+    background-color: #165dbb;
 }

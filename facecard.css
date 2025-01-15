@@ -15,17 +15,17 @@ body {
 }
 
 .logo-img {
-    width: 120px;
+    width: 12px;
 }
 
 nav {
     background-color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     height: fit-content;
     margin-bottom: 10px;
 }
 
-nav .container {
+nav .navcontainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,13 +58,18 @@ nav .container {
     background-color: #fff;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
 }
 
 .container h1 {
     color: #0866ff;
+    margin-bottom: 20px;
+}
+
+.container p {
+    color: #606770;
     margin-bottom: 20px;
 }
 
@@ -93,4 +98,18 @@ nav .container {
     background-color: #63a7ff;
 }
 
+.link .forgot {
+    color: #1877f2;
+    font-size: 0.875rem;
+  }
+  .link .forgot:hover {
+    text-decoration: underline;
+  }
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 /* #0866ff blue, #42b72a green, #f2f4f7 gray */ 

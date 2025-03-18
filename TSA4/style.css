@@ -1,0 +1,222 @@
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Source Serif 4", serif;
+}
+
+.text-light{
+    text-align: start;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    text-align: start;
+    color: white;
+}
+
+.container-menu {
+    position: absolute;
+    top: 80px; 
+    right: 50px; 
+}
+.btn {
+    background: #e1b75d;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#menu {
+    border: 2px solid white; 
+    padding: 10px 20px;
+    border-radius: 8px; 
+    background-color: transparent; 
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+#menu:hover {
+    background-color:#e1b75d;
+    color: black;
+    transform: scale(1.05);
+}
+
+.card {
+    border-radius: 10px;
+    border: 2px solid white;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.card-title {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+}
+
+.card img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    display: block;
+    margin-top: 41px;
+}
+
+.overlay {
+    
+    position: absolute;
+    bottom: -25%; 
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: bottom 0.3s ease-in-out;
+}
+
+
+.overlay p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.overlay hr {
+    width: 100%;
+    border: 1px solid black; /* Customize color */
+    margin: 10px 0; /* Reduce top and bottom margins */
+}
+
+.card:hover .overlay {
+    bottom: 0; 
+}
+
+.card:hover .overlay p {
+    opacity: 1;
+}
+
+/*POP UP CARD ---------------!!!!!*/
+
+.pop-up {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 100%;
+    max-width: 1500px;
+    height: 600px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    margin-top: 80px;
+    position: relative;
+
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+
+/* Flexbox layout */
+.popup-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Rotated Title */
+.popup-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 7%; /* Ensures full-width alignment */
+    text-align: center;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+}
+
+
+
+/* Left Section: Image */
+.popup-left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 5%;
+}
+
+.popup-content img{
+    width: 91%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Vertical Line Divider */
+.popup-divider {
+    width: 2px;
+    background: black;
+    height: 110px;
+}
+
+/* Right Section: Details & Description */
+.popup-right {
+    margin-top: 25px;
+    width: 50%;
+    padding-right: 15px;
+}
+
+.popup-right h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.popup-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.popup-info p{
+    margin-bottom: 5px;
+}
+
+.info-box {
+    background:transparent;
+}
+
+.popup-description {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+.pop-up.active {
+    display: flex;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.pop-up.hide {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+}

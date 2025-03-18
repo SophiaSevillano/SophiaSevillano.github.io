@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container text-center my-4">
+        <p class="text-light">Best of MANILA</p>
+        <h1 class="fw-bold text-light">Restaurant Guide</h1>
+        <p class="text-light">PRODUCED BY: LOCAL MAGAZINE</p>
+    </div>
+
+
+    <div class="container-menu">
+        <button id="menu" class="btn">Main Menu</button>
+    </div>
+
+
+    <div class="container">
+        <div class="row justify-content-end">
+            <!--CASA BUENAS-->
+            <div class="col-md-3 restaurant" data-id="casa-buenas">
+                <div class="card">
+
+                    <img src="casabuenas1.jpg" class="card-img">
+                    <div class="overlay">
+                        <div class="card-txt">
+                            <hr>
+                            <p>Splendid Filipino-Spanish feast!</p>
+                            <hr>
+                            <p>More</p>
+                        </div>
+                    </div>
+                    <div class="card-name">
+                        <h5 class="card-title">CASA BUENAS</h5>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--INCANTA-->
+            <div class="col-md-3 restaurant" data-id="incanta">
+                <div class="card">
+
+                    <img src="incanta1.jpg" class="card-img">
+                    <div class="overlay">
+                        <div class="card-txt">
+                            <hr>
+                            <p>Manila’s First Cave Bar!</p>
+                            <hr>
+                            <p>More</p>
+                        </div>
+                    </div>
+                    <div class="card-name">
+                        <h5 class="card-title">INCANTA</h5>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--KASA PALMA-->
+            <div class="col-md-3 restaurant" data-id="kasa-palma">
+                <div class="card">
+
+                    <img src="kasapalma1.jpg" class="card-img">
+                    <div class="overlay">
+                        <div class="card-txt">
+                            <hr>
+                            <p>Tropical Oasis in Poblacion!</p>
+                            <hr>
+                            <p>More</p>
+                        </div>
+                    </div>
+                    <div class="card-name">
+                        <h5 class="card-title">KASA PALMA</h5>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--UMA NOTA-->
+            <div class="col-md-3 restaurant" data-id="uma-nota">
+                <div class="card">
+
+                    <img src="umanota1.jpg" class="card-img">
+                    <div class="overlay">
+                        <div class="card-txt">
+                            <hr>
+                            <p>Brazilian-Japanese Culinary Festa!</p>
+                            <hr>
+                            <p>More</p>
+                        </div>
+                    </div>
+                    <div class="card-name">
+                        <h5 class="card-title">UMA NOTA</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-casa-buenas" class="pop-up">
+            <div class="popup-content">
+
+                <div class="popup-title">
+                    <h2>CASA BUENAS</h2>
+                </div>
+                
+                <!--LEFT-->
+                <div class="popup-left">
+                    <img src="casabuenas2.jpg" class="pop-img">
+                </div>
+
+
+                <!--RIGHT-->
+                <div class="popup-right">
+                    <h3>Casa Buenas</h3>
+                    <div class="popup-info">
+                        <div class="info-box">
+                            <p>NEWPORT WORLD RESORTS, PORTWOOD ST.</p>
+                            <p>NEWPORT CITY, PASAY</p>
+                            <p>T: +63 2 7908 8988</p>
+                            <p>@casa_buenas</p>
+                        </div>
+                        <div class="popup-divider"></div>
+                        <div class="info-box">
+                            <p>CATEGORY: FILIPINO, SPANISH</p>
+                            <p>OPEN: 11AM to 11PM</p>
+                            <p>PRICE: ₱₱₱₱</p>
+                        </div>
+                    </div>
+                    <div class="popup-description">
+                        <hr>
+                        <p>Inspired by the ingenuity of Filipino cooking with a delicate mix of Eastern and Western
+                            techniques, Casa Buenas offers a luscious array of gastronomic dishes from appetizers to
+                            soups and salads, to savory mains, grilled meat, seafood specialties, and succulent
+                            desserts. The restaurant boasts of fine Filipino food that reflects a premium and
+                            sophisticated palate, showcasing influences from neighboring Asian countries and spans to as
+                            far as Spain in Europe.
+                        </p>
+                        <p>Upon entering the restaurant, guests will be greeted to a warm and inviting ambiance with
+                            interiors reminiscent of a classic Filipino ancestral home. The design highlights the Bahay
+                            na Bato intricacies with elements inspired from the rich indigenous materials from Luzon,
+                            Visayas, and Mindanao. </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-incanta" class="pop-up">
+            <div class="popup-content">
+
+                <div class="popup-title">
+                    <h2>INCANTA</h2>
+                </div>
+
+                <!--LEFT-->
+                <div class="popup-left">
+                    <img src="incanta2.jpg" class="pop-img">
+                </div>
+
+                
+                <!--RIGHT-->
+                <div class="popup-right">
+                    <h3>Incanta</h3>
+                    <div class="popup-info">
+                        <div class="info-box">
+                            <p>70 SCT. LIMBAGA ST.</p>
+                            <p>DILIMAN, QUEZON CITY</p>
+                            <p>T: +63 967 463 8966</p>
+                            <p>@incanta.ph</p>
+                        </div>
+                        <div class="popup-divider"></div>
+                        <div class="info-box">
+                            <p>CATEGORY: FILIPINO, JAPANESE</p>
+                            <p>OPEN: 12PM to 3AM</p>
+                            <p>PRICE: ₱₱₱₱</p>
+                        </div>
+                    </div>
+                    <div class="popup-description">
+                        <hr>
+                        <p>Incanta is where history meets the future, blending ancient caves with futuristic luxury.
+                            More than just a bar or restaurant, it’s a sensory journey designed to transport you to
+                            another dimension—all within the hood of the city. By well-traveled Filipinos, design
+                            masterminds, and creative visionaries, Incanta was born from a vision to create something
+                            entirely new for the Philippines. The founders wanted to build a space that feels like
+                            traveling to another realm, offering a first-of-its-kind elevated dining and nightlife
+                            experience in the city.</p>
+                        <p>From our Filipino-Japanese menu crafted by Michelin Guide chef Frances Tariga to our
+                            signature cocktail lineup and world-class dinner show entertainment, Incanta is designed to
+                            awaken all your senses. Whether you’re celebrating milestones, sharing moments with loved
+                            ones, or simply enjoying a night out, every visit is a journey to the extraordinary.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-kasa-palma" class="pop-up">
+            <div class="popup-content">
+
+                <div class="popup-title">
+                    <h2>KASA PALMA</h2>
+                </div>
+
+                <!--LEFT-->
+                <div class="popup-left">
+                    <img src="kasapalma2.jpeg" class="pop-img">
+                
+                </div>
+        
+       
+                <!--RIGHT-->
+                <div class="popup-right">
+                    <h3>Kasa Palma</h3>
+                    <div class="popup-info">
+                        <div class="info-box">
+                            <p>PALMA ST.,POBLACION</p>
+                            <p>MAKATI CITY</p>
+                            <p>T: +63 917 155 9669</p>
+                            <p>@kasapalma</p>
+                        </div>
+                        <div class="popup-divider"></div>
+                        <div class="info-box">
+                            <p>CATEGORY: FILIPINO, MEXICAN, FRENCH</p>
+                            <p>OPEN: 6PM to 11PM</p>
+                            <p>PRICE: ₱₱₱₱</p>
+                        </div>
+                    </div>
+                    <div class="popup-description">
+                        <hr>
+                        <p>There’s something for everyone in Poblacion. If you are looking for a spot for your next date night, Kása Palma in Poblacion, Makati, should definitely be on your list! It’s a restaurant that features a unique Jungle Kitchen at the back, where you can witness your food being prepared over firewood, adding a rustic charm to your dining experience. With its eclectic mix of bars, trendy eateries, and hidden gems, Poblacion offers a dynamic atmosphere that caters to every mood.</p>
+                        <p>Kasa Palma also boasts a variety of unique spaces that cater to any occasion. If it’s the boozy drinks you’re after, their bar offers an impressive selection of cocktails and spirits, allowing you to savor every sip in the inviting atmosphere of the Bar Lounge.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-uma-nota" class="pop-up">
+            <div class="popup-content">
+
+                <div class="popup-title">
+                    <h2>UMA NOTA</h2>
+                </div>
+
+                <!--LEFT-->
+                <div class="popup-left">
+                    <img src="umanota2.jpeg" class="pop-img">
+                </div>
+        
+        
+                <!--RIGHT-->
+                <div class="popup-right">
+                    <h3>Uma Nota</h3>
+                    <div class="popup-info">
+                        <div class="info-box">
+                            <p>SHANGRI-LA THE FORT 30TH ST.</p>
+                            <p>TAGUIG CITY</p>
+                            <p>T: +63 917 307 2766</p>
+                            <p>@umanota.manila</p>
+                        </div>
+    
+                        <div class="popup-divider"></div>
+
+                        <div class="info-box">
+                            <p>CATEGORY: BRAZILIAN, JAPANESE</p>
+                            <p>OPEN: 11:30AM to 3AM</p>
+                            <p>PRICE: ₱₱₱₱</p>
+                        </div>
+                    </div>
+                    <div class="popup-description">
+                        <hr>
+                        <p>Uma Nota draws its essence from a captivating historical journey – the migration of the Japanese to Brazil in the early 20th century. Seeking opportunities, thousands of Japanese immigrants set sail for the fertile lands of São Paulo, finding a home in the vibrant neighborhood of Liberdade. Facing the challenges of adapting to a new culture and climate, Liberdade became a cultural hub where the Japanese community interwove with the vibrant tapestry of Brazilian society. Inspired by this rich history, Uma Nota's founders, brother & sister duo Alex & Laura Offe, envisioned a space that pays homage to the dynamic interplay between Brazilian and Japanese influences.</p>
+                        <p>As we bring Uma Nota to Manila, we introduce a new dimension to the concept, unveiling fresh design elements and unique experiences tailored to the dynamic spirit of the city. Join us as we celebrate the launch of Uma Nota in Manila, bringing a taste of Brazil and Japan with a local twist. Here's to creating new memories, savoring diverse flavors, and embracing the cultural harmony that defines Uma Nota.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <script defer src="script.js"></script>
+</body>
+
+</html>

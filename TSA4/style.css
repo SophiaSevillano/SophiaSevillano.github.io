@@ -1,3 +1,9 @@
+.icon {
+    margin-right: 5px; /* Space between the icon and the text */
+    vertical-align: middle; /* Aligns the icon with the text */
+}
+
+
 body {
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -18,8 +24,9 @@ h1 {
 .container-menu {
     position: absolute;
     top: 80px; 
-    right: 50px; 
+    right: 130px;
 }
+
 .btn {
     background: #e1b75d;
     padding: 10px 20px;
@@ -43,6 +50,8 @@ h1 {
     transform: scale(1.05);
 }
 
+
+
 .card {
     border-radius: 10px;
     border: 2px solid white;
@@ -50,6 +59,13 @@ h1 {
     text-align: center;
     margin-bottom: 10px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 2px 1px 20px 3px rgba(255, 255, 255, 0.756);
 }
 
 .card-title {
@@ -60,7 +76,7 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .card img {
@@ -74,10 +90,10 @@ h1 {
 .overlay {
     
     position: absolute;
-    bottom: -25%; 
+    bottom: -53%; 
     left: 0;
     width: 100%;
-    height: 25%;
+    height: 35%;
     background: rgba(255, 255, 255, 0.8);
     display: flex;
     align-items: center;
@@ -87,17 +103,18 @@ h1 {
 
 
 .overlay p {
-    margin: 0;
-    font-size: 14px;
-    font-weight: bold;
+    margin: 10px 30px 10px;
+    font-size: 11px;
     opacity: 0;
     transition: bottom 0.3s ease-in-out;
 }
 
 .overlay hr {
-    width: 100%;
-    border: 1px solid black; /* Customize color */
-    margin: 10px 0; /* Reduce top and bottom margins */
+    align-items: center;
+    width: 50%;
+    max-width: 150px; /* Prevents it from being too wide */
+    border: 1px solid black;
+    margin: 5px auto;
 }
 
 .card:hover .overlay {
@@ -106,62 +123,63 @@ h1 {
 
 .card:hover .overlay p {
     opacity: 1;
+    
 }
 
 /*POP UP CARD ---------------!!!!!*/
 
 .pop-up {
-    display: none;
+    display: none; 
     position: fixed;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: calc(50.9% + 8.33%);
+    transform: translate(-50%, -50%) scale(0.9);
     background: white;
-    width: 100%;
+    width: 66.67%;
     max-width: 1500px;
-    height: 600px;
+    height: 530px;
     padding: 10px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    margin-top: 80px;
-    position: relative;
-
+    margin-top: 90px;
     opacity: 0;
-    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 
-/* Flexbox layout */
+.pop-up.active {
+    display: flex;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: auto;
+}
+
+
 .popup-content {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
-/* Rotated Title */
 .popup-title {
     position: absolute;
     top: 50%;
-    left: 0;
-    width: 7%; /* Ensures full-width alignment */
+    left: 2%;
+    width: auto;
     text-align: center;
-    transform: translateY(-50%) rotate(-90deg);
-    font-size: 20px;
+    transform: translate(-50%, -50%) rotate(-90deg);    font-size: 20px;
     font-weight: bold;
     color: black;
     white-space: nowrap;
 }
 
-
-
-/* Left Section: Image */
 .popup-left {
     display: flex;
     align-items: center;
     width: 50%;
-    margin-left: 5%;
+    padding-left: 3%;
+    
 }
 
 .popup-content img{
@@ -170,14 +188,16 @@ h1 {
     object-fit: cover;
 }
 
-/* Vertical Line Divider */
+
 .popup-divider {
     width: 2px;
     background: black;
-    height: 110px;
+    height: auto;
+    min-height: 100px;
+    margin: 0 10px;
 }
 
-/* Right Section: Details & Description */
+
 .popup-right {
     margin-top: 25px;
     width: 50%;
@@ -186,14 +206,16 @@ h1 {
 
 .popup-right h3{
     font-family: 'Great Vibes', cursive;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
 }
 
 .popup-info {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .popup-info p{
@@ -201,19 +223,14 @@ h1 {
 }
 
 .info-box {
-    background:transparent;
+    font-size: 0.8em;
+    max-width: 200px;
+    width: auto;
 }
 
 .popup-description {
-    font-size: 14px;
+    font-size: 0.85em;
     line-height: 1.6;
-}
-
-
-.pop-up.active {
-    display: flex;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
 }
 
 .pop-up.hide {

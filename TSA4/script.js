@@ -5,7 +5,7 @@ function showPopup(menuId) {
         div.style.display = "none";
     });
 
-    // Show the correct pop-up
+    // show assigned pop-up
     const popup = document.getElementById(`popup-${menuId}`);
     if (popup) {
         popup.style.display = "flex"; //showww

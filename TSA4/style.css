@@ -1,6 +1,6 @@
 .icon {
-    margin-right: 5px; /* Space between the icon and the text */
-    vertical-align: middle; /* Aligns the icon with the text */
+    margin-right: 5px;
+    vertical-align: middle;
 }
 
 
@@ -112,7 +112,7 @@ h1 {
 .overlay hr {
     align-items: center;
     width: 50%;
-    max-width: 150px; /* Prevents it from being too wide */
+    max-width: 150px; 
     border: 1px solid black;
     margin: 5px auto;
 }
